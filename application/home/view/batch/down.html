@@ -1,0 +1,41 @@
+{extend name='default'}
+{block name='main'}
+        <!--/sidebar-->
+    
+    <div class="main-wrap " >
+
+        <div class="crumb-wrap">
+            
+        </div>
+        <div class="result-wrap">
+            <div class="result-content">
+                    <!-- <form action="/home/batch/down" enctype="multipart/form-data" method="post">
+                        <input name="excel" type="file" class="form-control excel_path">
+                        <input type="submit" value="获取转换文件" class="btn btn-lg btn-primary btn-block">
+                    </form>  -->
+                   
+                    
+                   
+                    <a href="/home/batch/down/{$row}" id = 'btn1'  onclick="three()" value = "点击获取转换文件" style="display: block;">点击获取转换文件</a>
+                    
+                    
+            </div>
+            
+        </div>
+                    <img src="/2.gif" id = 'img1' alt="" style="display: none;">  
+    </div>
+    <!--/main-->
+    <script>
+        function three(){
+            var img = document.getElementById("img1");
+            var btn = document.getElementById("btn1");
+            img.style.display = "block";
+            btn.style.display = "none";
+        }
+        
+
+
+    </script>
+    
+
+{/block}

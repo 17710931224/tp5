@@ -1,0 +1,45 @@
+{extend name='default'}
+{block name='main'}
+        <!--/sidebar-->
+    
+    <div class="main-wrap " >
+
+        <div class="crumb-wrap">
+            
+        </div>
+        <div class="result-wrap">
+            <div class="result-content">
+                <form action="/home/index/index" method="post" id="myform" name="myform" enctype="multipart/form-data">
+                    <table class="insert-tab" width="100%">
+                        <tbody>
+                            <tr>
+                                <th><i class="require-red"></i>长链接：</th>
+                                <td>
+                                    <input class="common-text required" id="title" name="Ylink" size="50" value="{$user.Ylink}" type="text" readonly="true">
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                    <th><i class="require-red"></i>短链接：</th>
+                                    <td>
+                                        <input class="common-text required" id="title" name="Dlink" size="50" value="{$user.Dlink}" type="text" readonly="true">
+                                    </td>
+                                </tr>
+                            <tr>
+                                <th></th>
+                                <td>
+                                    
+                                    <input class="btn btn6" value="返回" type="submit">
+                                </td>
+                            </tr>
+                        </tbody></table>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!--/main-->
+
+    
+
+{/block}

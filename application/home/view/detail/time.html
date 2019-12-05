@@ -1,0 +1,30 @@
+{extend name='default'}
+{block name='main'}
+        <!--/sidebar-->
+
+    <style type="text/css">
+        .con{
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        input[type=month]::-webkit-inner-spin-button{visibility: hidden;}
+       
+    </style>
+
+
+    <div class="main-wrap " >
+    
+    <div class= "con">
+        <form action="/home/detail/index" enctype="multipart/form-data" method="post">
+            <input name="time" type="month" class="form-control excel_path">
+            <input type="submit" value="查看" class="btn btn-lg btn-primary btn-block">
+            
+        </form> 
+            
+    </div>
+    </div>
+       
+
+
+{/block}

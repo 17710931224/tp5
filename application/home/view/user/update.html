@@ -1,0 +1,51 @@
+{extend name="user/userindex" /}
+{block name='mains'}
+        <!--/sidebar-->
+    
+    <div class="main-wrap " >
+
+        <div class="crumb-wrap">
+            
+        </div>
+        <div class="result-wrap">
+            <div class="result-content">
+                    <form action="/home/register/passw" method="post" id="myform" name="myform" enctype="multipart/form-data">
+                    <table class="insert-tab" width="100%">
+                        <tbody>
+                            <tr>
+                                <th><i class="require-red"></i>旧密码：</th>
+                                <td>
+                                    <input class="common-text required" id="title" name="opwd"  value="" type="password" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red"></i>新密码：</th>
+                                <td>
+                                    <input class="common-text required"  id="title" name="pwd"   value="" type="password" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red"></i>确认新密码：</th>
+                                <td>
+                                    <input class="common-text required"  id="title" name="upwd"   value="" type="password" >
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <th></th>
+                                <td>
+                                        <input class="btn btn-primary btn6 mr10" value="修改密码" type="submit">
+                                    
+                                </td>
+                            </tr>
+                        </tbody></table>
+                </form> 
+            </div>
+        </div>
+
+    </div>
+    <!--/main-->
+
+    
+
+{/block}

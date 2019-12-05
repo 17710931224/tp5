@@ -1,0 +1,56 @@
+{extend name="user/userindex" /}
+{block name='mains'}
+        <!--/sidebar-->
+    
+    <div class="main-wrap " >
+
+        <div class="crumb-wrap">
+            
+        </div>
+        <div class="result-wrap">
+            <div class="result-content">
+                
+                    <table class="insert-tab" width="100%">
+                        <tbody>
+                            <tr>
+                                <th><i class="require-red"></i>账号：</th>
+                                <td>
+                                    <input class="common-text required" id="title" name="uname"  value="{$sql->uname}" type="text" readonly="readonly">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red"></i>电话：</th>
+                                <td>
+                                    <input class="common-text required"  id="title" name="tel"   value="{$sql->tel}" type="text" readonly="readonly">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red"></i>余额：</th>
+                                <td>
+                                    <input class="common-text required"  id="title" name="tel"   value="{$sql->balance}" type="text" readonly="readonly">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red"></i>注册时间：</th>
+                                <td>
+                                    <input class="common-text required"  id="title" name="tel"   value="{$sql->regtime}" type="text" readonly="readonly">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>
+                                   <a href = '/home/register/update'>修改密码</a>
+                                    
+                                </td>
+                            </tr>
+                        </tbody></table>
+                
+            </div>
+        </div>
+
+    </div>
+    <!--/main-->
+
+    
+
+{/block}

@@ -1,0 +1,35 @@
+{extend name='default'}
+{block name='main'}
+        <!--/sidebar-->
+    
+    <div class="main-wrap " >
+
+        <div class="crumb-wrap">
+            
+        </div>
+        <div class="result-wrap">
+            <div class="result-content">
+                    <!-- <form action="/home/batch/upload" enctype="multipart/form-data" method="post">
+                        <input name="excel" type="file" class="form-control excel_path">
+                        <input type="submit" value="上传Excel文件" class="btn btn-lg btn-primary btn-block">
+                    </form>  -->
+                    
+                    <a href="/home/batch/file/{$row}" id= "change"  value = "获取转换文件" >转换成功,写入文件,请稍等...</a>
+            </div>
+        </div>
+                    
+    </div>
+    <!--/main-->
+    <script>
+       function run(){
+           document.getElementById("change").click();
+           var aObj = document.getElementById("change");
+           
+           aObj.href = '#';
+        //    aObj.innerText = '文件获取成功';
+       }
+       
+    </script>
+    
+
+{/block}
