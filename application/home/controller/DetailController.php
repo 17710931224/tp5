@@ -47,7 +47,7 @@ class DetailController extends Controller
         }else{
             $datem = substr($date,5);
             $dated = 31;
-            //print($datem);die;
+            
         }
        
         
@@ -96,7 +96,7 @@ class DetailController extends Controller
         'dated'=>$dated, 
         'datem'=>$datem,
         'str'=>$str
-        ]); 
+        ]);
     }
 
     /**
